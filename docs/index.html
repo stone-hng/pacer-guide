@@ -11,6 +11,19 @@
   <script src="./app.js" defer></script>
 </head>
 <body>
+<section class="entry-gate" id="entry-gate" aria-labelledby="entry-title">
+  <div class="entry-inner">
+    <p class="eyebrow">10K PACER FIELD GUIDE</p>
+    <h1 id="entry-title">우리는!</h1>
+    <form id="entry-form">
+      <label for="entry-answer">우리의 이름을 입력하세요.</label>
+      <div class="entry-controls"><input id="entry-answer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="entry-error" required><button type="submit">입장 <span aria-hidden="true">↗</span></button></div>
+      <p id="entry-error" class="entry-error" role="status" aria-live="polite"></p>
+    </form>
+    <noscript><p>입장하려면 브라우저에서 JavaScript를 켜주세요.</p></noscript>
+  </div>
+</section>
+<div id="guide-content" hidden>
 <a class="skip-link" href="#main">본문으로 바로가기</a>
 <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
 <div class="page-shell">
@@ -43,7 +56,7 @@
 
     <section class="chapter" id="principles" aria-labelledby="principles-title">
       <div class="chapter-heading"><span class="chapter-num">01 /</span><p class="eyebrow">THE PROMISE</p></div>
-      <h2 id="principles-title">우리가 지킬<br>다섯 가지 약속.</h2>
+      <h2 id="principles-title">우리가 지킬<br>여섯 가지 약속.</h2>
       <p class="section-intro">페이서는 참가자가 자신의 레이스를 이어갈 수 있도록, 예측 가능한 속도를 제공합니다.</p>
       <ol class="principle-list">
         <li><span class="list-no">01</span><div><h3>출발선에서 시간을 시작합니다.</h3><p>출발 신호가 아닌, 내가 출발선을 통과한 순간부터 넷타임으로 측정합니다.</p></div></li>
@@ -132,6 +145,7 @@
 
     <footer id="sources"><details class="disclosure"><summary>참고 자료와 출처 <span class="detail-sign" aria-hidden="true">+</span></summary><ul class="source-list"><li><a href="https://www.nike.com/a/what-is-cadence-running" target="_blank" rel="noopener noreferrer">Nike · 개인별 케이던스와 자연스러운 리듬 ↗</a><p>케이던스·보폭과 속도의 관계. 180spm은 모두의 목표가 아닙니다.</p></li><li><a href="https://www.nike.com/au/a/nail-the-perfect-running-form" target="_blank" rel="noopener noreferrer">Nike · 편안한 상체와 암스윙 ↗</a><p>어깨·손의 불필요한 긴장을 줄이는 코칭 참고.</p></li><li><a href="https://journals.biologists.com/jeb/article/217/14/2456/12120/The-metabolic-cost-of-human-running-is-swinging" target="_blank" rel="noopener noreferrer">Journal of Experimental Biology · 암스윙 연구 (2014) ↗</a><p>팔을 제한한 달리기와 정상 암스윙의 에너지 비용 비교. 페이스 유지 정확도를 직접 검증한 연구는 아닙니다.</p></li><li><a href="https://www.cultofmac.com/reviews/nike-run-club-app-review-apple-watch-nike" target="_blank" rel="noopener noreferrer">NRC Apple Watch 기록 비교 (2017) ↗</a><p>당시 GPS 기록 약 4초 간격 관찰. 5–10초 사용자 추정과 별개의 과거 사례로, 현재 페이스 산출 구간을 뜻하지 않습니다.</p></li></ul><p class="small muted">장비 관련 공식 출처는 각 장비 설명에 있습니다. 약 1분 확인과 상황별 안내는 이 가이드의 운영 제안입니다. 자료 확인: 2026.09.28.</p></details><div class="footer-line"><span>10K PACER FIELD GUIDE</span><span>2026 · KEEP IT EVEN.</span></div><p class="small muted">러닝 학습을 위한 독립 가이드입니다. 행사별 세부 운영은 현장 안내를 확인하세요.</p></footer>
   </main>
+</div>
 </div>
 </body>
 </html>

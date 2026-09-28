@@ -23,11 +23,11 @@
 ## Information architecture
 - One scrolling page: principles, pace card, device display, rhythm, scenarios, checklist.
 - Fixed desktop index; mobile collapsible sticky index. Sources at end.
-- Essential rules always visible. Secondary notes and full tables may be expanded.
+- Essential rules visible after entry. Secondary notes and full tables may be expanded.
 
 ## Design principles
 - Typography and spacing establish hierarchy; avoid decorating every paragraph as a card.
-- Interaction clarifies a decision; essential content must remain readable without JS.
+- Interaction clarifies a decision; entry gate requires JS; guide remains hidden until the club answer matches.
 - State uncertainty next to the claim, including the NRC illustrative window.
 
 ## Visual language
@@ -59,7 +59,8 @@
 - Default 60-minute illustration, clearly labeled. Inputs validated and bounded.
 - Storage errors: page remains usable; show session-only note for checklist.
 - Feedback: explain correct and incorrect choices; allow changing answers.
-- No disabled essential content. Network unnecessary after assets have loaded.
+- Entry answer is normalized for whitespace and case. Unlock lasts until reload; no stored authentication.
+- This is a client-side visibility gate, not confidential access control. Network unnecessary after assets have loaded.
 
 ## Content voice
 - Concise Korean, familiar running terms, supportive and concrete.

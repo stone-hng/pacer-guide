@@ -1,6 +1,32 @@
 'use strict';
 
 (() => {
+  const gate = document.getElementById('entry-gate');
+  const guide = document.getElementById('guide-content');
+  const answer = document.getElementById('entry-answer');
+  const entryError = document.getElementById('entry-error');
+  document.getElementById('entry-form').addEventListener('submit', event => {
+    event.preventDefault();
+    const normalized = answer.value.replace(/\s/g, '').toLowerCase();
+    if (!['krc', '카카오러닝클럽', '카런클'].includes(normalized)) {
+      entryError.textContent = '다시 한번 확인해주세요.';
+      answer.setAttribute('aria-invalid', 'true');
+      answer.focus();
+      return;
+    }
+    gate.hidden = true;
+    guide.hidden = false;
+    answer.value = '';
+    const main = document.getElementById('main');
+    main.setAttribute('tabindex', '-1');
+    main.focus({ preventScroll: true });
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    renderScroll();
+  });
+  answer.addEventListener('input', () => {
+    answer.removeAttribute('aria-invalid');
+    entryError.textContent = '';
+  });
   const targets = [45, 50, 55, 60, 65, 70];
   const storageKey = 'pacer-guide-v1';
   let target = 60;
