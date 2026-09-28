@@ -1,0 +1,7 @@
+# Local reference material and internal content must never enter the public repository.
+/pacer-guide-content.md
+/*.html
+/*_files/
+/.omx/
+/.DS_Store
+/artifacts/
