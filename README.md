@@ -29,3 +29,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory docs
 ## 입장 화면
 
 첫 화면에서 클럽 이름을 입력하면 본문이 표시됩니다. 공백과 영문 대소문자는 구분하지 않습니다. 새로고침하면 다시 입력해야 하며 JavaScript를 끄면 본문은 숨겨집니다. 정적 파일의 화면 가림 기능이므로 소스 열람을 차단하는 인증은 아닙니다.
+
+## 코스 가상 주행 영상 연결
+
+`docs/index.html`의 `course-video-player` iframe에서 `data-src`의 영상 ID를 변경하고, 아래 YouTube 원본 링크도 함께 갱신합니다. 영상은 입장 후 지연 로딩하며 페이지 안에서 16:9 비율로 재생됩니다. 자동 재생은 하지 않습니다. YouTube 개인정보 보호 강화 도메인(`youtube-nocookie.com`)을 사용하며 영상 이용 시 외부 서비스에 연결됩니다.

@@ -68,7 +68,7 @@
 - Never imply cadence alone guarantees speed; no universal 180spm target.
 
 ## Implementation constraints
-- Plain HTML/CSS/JS, no dependencies, analytics, tracking, cookies or remote assets.
+- Plain HTML/CSS/JS, no dependencies or site analytics. Course video uses a responsive YouTube privacy-enhanced embed, loaded lazily after entry; no autoplay.
 - GitHub Pages publish directory: `/docs`. Do not publish local source/reference HTML.
 - No personal data in source, metadata, scripts or generated assets.
 - Test 320/390/768/1440px layouts; pace math, anchors, controls, persistence, keyboard, no-JS.

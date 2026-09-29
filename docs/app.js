@@ -16,6 +16,8 @@
     }
     gate.hidden = true;
     guide.hidden = false;
+    const courseVideo = document.getElementById('course-video-player');
+    courseVideo.src = courseVideo.dataset.src;
     answer.value = '';
     const main = document.getElementById('main');
     main.setAttribute('tabindex', '-1');
