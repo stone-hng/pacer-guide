@@ -14,7 +14,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory docs
 ## GitHub Pages
 
 저장소에 `docs/`와 공개용 프로젝트 파일만 올린 다음 Settings → Pages → Deploy from a branch에서 해당 브랜치와 `/docs`를 선택합니다.
-현재 원격 저장소 생성·업로드·배포는 하지 않았습니다.
+배포 주소: https://stone-hng.github.io/pacer-guide/
 
 내부 원고와 내려받은 참고 HTML은 `.gitignore`에 포함되어 있습니다. 공개 파일은 `docs/index.html`, `docs/styles.css`, `docs/app.js`, `docs/.nojekyll`입니다.
 
@@ -33,3 +33,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory docs
 ## 코스 가상 주행 영상 연결
 
 `docs/index.html`의 `course-video-player` iframe에서 `data-src`의 영상 ID를 변경하고, 아래 YouTube 원본 링크도 함께 갱신합니다. 영상은 입장 후 지연 로딩하며 페이지 안에서 16:9 비율로 재생됩니다. 자동 재생은 하지 않습니다. YouTube 개인정보 보호 강화 도메인(`youtube-nocookie.com`)을 사용하며 영상 이용 시 외부 서비스에 연결됩니다.
+
+## 공유 미리보기와 검색
+
+Open Graph와 Twitter 카드에 `docs/assets/share.png`(1200×630)를 사용합니다. 외부 폰트·캐릭터 없이 타이포그래피로 구성한 이미지입니다. `noindex, nofollow`로 검색 노출 제외를 요청하며, 공유 미리보기 수집을 막지 않도록 robots.txt로 크롤링을 차단하지 않습니다. 주소가 바뀌면 canonical·og:url·공유 이미지의 절대 URL도 갱신하세요.
